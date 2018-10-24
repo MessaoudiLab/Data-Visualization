@@ -1,4 +1,4 @@
-#Bubble Plot in ggplot2
+# Bubble Plot in ggplot2
 
 ## Introduction
 
