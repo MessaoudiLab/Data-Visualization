@@ -78,5 +78,6 @@ To access underlying code of a function
 getAnywhere()
 ```
 ## References
+* [tutorial for weighted scatter plots](http://t-redactyl.io/blog/2016/02/creating-plots-in-r-using-ggplot2-part-6-weighted-scatterplots.html)
 
 Written by Brian Ligh
