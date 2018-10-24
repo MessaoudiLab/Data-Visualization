@@ -67,8 +67,13 @@ pTF <- pTF + facet_grid(. ~ Orientation)
 pTF <- pTF + labs(size = “Gene Count”, fill = “p-value”)
 ```
 "labs" regards the label names and takes the same arguments as "aes" in the first module. Since, the x and y titles will not be included in this graph
+
 ## Ordering by chosen variable
-By default, the x and y dimensions will be sorted alphabetically. To sort the "pathway names" by "p-value" for example, the "pathway names" variable must be changed to a factor with levels. 
+Reordering of the y axis can only be done if the x axis has only 1 level.
+```
+ggplot(file,aes(y=reorder(Pathway_Name,rev(p_value))...
+```
+By default, the x and y dimensions will be sorted alphabetically. To sort the "pathway names" by "p-value" for example, the reorder function is used to order the levels of "Pathway_Name" by the reverse sequence of "p_value." Reversing the "p_value" sequence makes the most statistically significant pathways appear at the top of the graph. 
 
 ## Useful Functions
 To access help window
