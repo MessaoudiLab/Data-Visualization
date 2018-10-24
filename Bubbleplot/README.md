@@ -67,7 +67,8 @@ pTF <- pTF + facet_grid(. ~ Orientation)
 pTF <- pTF + labs(size = “Gene Count”, fill = “p-value”)
 ```
 "labs" regards the label names and takes the same arguments as "aes" in the first module. Since, the x and y titles will not be included in this graph
-## Sorting by chosen variable
+## Ordering by chosen variable
+By default, the x and y dimensions will be sorted alphabetically. To sort the "pathway names" by "p-value" for example, the "pathway names" variable must be changed to a factor with levels. 
 
 ## Useful Functions
 To access help window
@@ -80,5 +81,6 @@ getAnywhere()
 ```
 ## References
 * [tutorial for weighted scatter plots](http://t-redactyl.io/blog/2016/02/creating-plots-in-r-using-ggplot2-part-6-weighted-scatterplots.html)
+* [ordering y axis](https://stackoverflow.com/questions/18401931/ggplot2-ordering-y-axis)
 
 Written by Brian Ligh
