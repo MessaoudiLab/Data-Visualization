@@ -40,11 +40,13 @@ Applying this code to the dataset “Up_Down.txt” will produce the graph “Up
 ```
 pTF <- ggplot(Up_Down, aes(x = Sample, y = Pathway_Name, size = gene_count, fill = p_value))
 ```
+The module, "ggplot," indexes the data from the chosen file into 4 different variables, all of which can be continuous or discrete. For this specific application, most variables will be discrete/categorical.
 
 ## 2. geom_point()
 ```
 pTF <- pTF + geom_point(shape = 21)
 ```
+The module, "geom_point," lets ggplot2 know that it needs to create a scatter plot. For this application, the argument "shape = 21" is used to create bubbles with empty fill in order to accomadate the variable fill described by the previous module.
 
 ## 3. theme()
 ```
