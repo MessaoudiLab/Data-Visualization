@@ -46,24 +46,26 @@ The module, "ggplot," indexes the data from the chosen file into 4 different var
 ```
 pTF <- pTF + geom_point(shape = 21)
 ```
-The module, "geom_point," lets ggplot2 know that it needs to create a scatter plot. For this application, the argument "shape = 21" is used to create bubbles with empty fill in order to accomadate the variable fill described by the previous module.
+"geom_point" lets ggplot2 know that it needs to create a scatter plot. For this application, the argument "shape = 21" is used to create bubbles with empty fill in order to accomadate the variable fill described by the previous module.
 
 ## 3. theme()
 ```
 pTF <- pTF + theme_bw() 
 + theme(axis.title.x = element_blank(), axis.ticks.x = element_blank(), axis.title.y = element_blank())
 ```
+"theme_bw" colors the background of the graph white as opposed to the default theme that colors it grey. Be sure to sequence this module before any of the other aesthetic modules, or else default settings of "theme_bw" will overwrite some desired settings. The example arguments within the "theme" module delete the axis titles and x axis ticks
 
 ## 4. facet.grid()
 ```
 pTF <- pTF + facet_grid(. ~ Orientation)
 ```
+"facet.grid" separates the data into two separate graphs "Up" and "Down" according to the variable "Orientation."
 
 ## 5. labs()
 ```
 pTF <- pTF + labs(size = “Gene Count”, fill = “p-value”)
 ```
-
+"labs" regards the label names and takes the same arguments as "aes" in the first module. Since, the x and y titles will not be included in this graph
 ## Sorting by chosen variable
 
 ## Useful Functions
