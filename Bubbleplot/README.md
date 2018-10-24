@@ -23,7 +23,7 @@ library(ggplot2)
 ```
 
 ### Data
-The data object should be a tab delimited text file in similar format to Up_Down.txt. Make sure to not include spaces, parenthesis, hyphens, etc. in variable names. Underscore is ok.
+The data object should be a tab delimited text file in similar format to Up_Down.txt. Make sure to not include spaces, parenthesis, hyphens, etc. in variable names as it will confuse R when trying to call certain variables. Underscore is ok.
 
 ## TLDR
 ```
