@@ -13,8 +13,19 @@ Rstudio is an integrated development environment for R that includes a console w
 ``` 
 
 ### ggplot2 package
+ggplot2 can be obtained by the following command
+
+```
+install.packages('ggplot2')
+```
+Once installed, execute this command to load the package
+
+```
+library(ggplot2)
+```
 
 ### Data
+The data object should be a tab delimited text file in similar format to Up_Down.txt. Make sure to not include spaces, parenthesis, hyphens, etc. in variable names. Underscore is ok.
 
 ## TLDR
 ```
@@ -23,7 +34,7 @@ pTF <- ggplot(Up_Down, aes(x = Sample, y = Pathway_Name, size = gene_count, fill
 + theme(axis.title.x=element_blank(), axis.ticks.x = element_blank(), axis.title.y = element_blank()) 
 + labs(size = "Gene Count", fill = "p-value")
 ```
-Applying this code to the dataset “Up_Down.txt” will produce the graph “Up_Down.pdf”
+Applying this code to the dataset “Up_Down.txt” will produce the graph “Up_Down.pdf.” When copying, make sure all code is within one command line.
 
 ## 1. ggplot()
 ```
