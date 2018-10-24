@@ -33,9 +33,9 @@ pTF <- pTF + geom_point(shape = 21)
 ```
 
 ## 3. theme()
-```
+
 pTF <- pTF + theme_bw() + theme(axis.title.x = element_blank(), axis.ticks.x = element_blank(), axis.title.y = element_blank())
-```
+
 
 ## 4. facet.grid()
 ```
