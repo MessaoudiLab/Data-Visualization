@@ -36,32 +36,33 @@ pTF <- ggplot(Up_Down, aes(x = Sample, y = Pathway_Name, size = gene_count, fill
 ```
 Applying this code to the dataset “Up_Down.txt” will produce the graph “Up_Down.pdf.” When copying, make sure all code is within one command line.
 
-## 1. ggplot()
+## Module Breakdown
+### 1. ggplot()
 ```
 pTF <- ggplot(Up_Down, aes(x = Sample, y = Pathway_Name, size = gene_count, fill = p_value))
 ```
 The module, "ggplot," indexes the data from the chosen file into 4 different variables, all of which can be continuous or discrete. For this specific application, most variables will be discrete/categorical.
 
-## 2. geom_point()
+### 2. geom_point()
 ```
 pTF <- pTF + geom_point(shape = 21)
 ```
 "geom_point" lets ggplot2 know that it needs to create a scatter plot. For this application, the argument "shape = 21" is used to create bubbles with empty fill in order to accomadate the variable fill described by the previous module.
 
-## 3. theme()
+### 3. theme()
 ```
 pTF <- pTF + theme_bw() 
 + theme(axis.title.x = element_blank(), axis.ticks.x = element_blank(), axis.title.y = element_blank())
 ```
 "theme_bw" colors the background of the graph white as opposed to the default theme that colors it grey. Be sure to sequence this module before any of the other aesthetic modules, or else default settings of "theme_bw" will overwrite some desired settings. The example arguments within the "theme" module delete the axis titles and x axis ticks
 
-## 4. facet.grid()
+### 4. facet.grid()
 ```
 pTF <- pTF + facet_grid(. ~ Orientation)
 ```
 "facet.grid" separates the data into two separate graphs "Up" and "Down" according to the variable "Orientation."
 
-## 5. labs()
+### 5. labs()
 ```
 pTF <- pTF + labs(size = “Gene Count”, fill = “p-value”)
 ```
