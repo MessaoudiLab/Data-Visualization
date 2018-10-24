@@ -1,7 +1,5 @@
 # Bubble Plot in ggplot2
 
-## Introduction
-
 ## Prerequisites
 
 ### Rstudio
