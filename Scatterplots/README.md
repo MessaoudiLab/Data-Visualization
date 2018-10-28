@@ -1,11 +1,12 @@
 # Scatterplots
 ## STEP1: Read in input file
 
-###file
+### Input file
 Input file should have three columns. First column is the common parameter that is being compared between two conditions. Second and third column are the quantitative measurements of each condition that will be used to plot x-axis and y-axis, respectively. For example, header should be "GENE" "foldchange.x" "foldchange.y"
+
 View "scatter_input.txt" in Excel for an example
 
-###read in file
+### Read in file
 ```
 object <- read.delim("scatter_input.txt", header=TRUE, sep="\t")
 ```
