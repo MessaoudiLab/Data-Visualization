@@ -4,7 +4,7 @@
 - Ex: defense to virus, inflammation, etc.
 
 2. Column of terms followed by distinguishing columns with appropriate -log(FDR) values
-- Ex: Term, MARV_unique, MARV_EBOV, EBOV_unique
+- Ex: Term, MARV_unique, MARV_EBOV, etc.
 ```
 ## Log into cluster and input both files under one directory
 - nano genelist and paste file 1
