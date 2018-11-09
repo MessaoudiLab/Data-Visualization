@@ -6,4 +6,4 @@
 - nano and paste file2
 
 ## Run the script 2wayvenn_text.R under the directory containing file1 and file2
-Rscript /absolutepathto2wayvenn_text.R  nameofvariable1  file1  nameofvariable2  file2  nameofvenn
+Rscript absolutepathto2wayvenn_text.R  nameofvariable1  file1  nameofvariable2  file2  nameofvenn
