@@ -8,7 +8,7 @@ Usage
 Rscript 2wayvenn.R label1 {file1} label2 {file2} name_of_output
 ```
 
-This script will write out 4 excel files:
+This script will write out 4 tab delimited files:
   - "_commonf1.txt" Common list of elements with all corresponding information (i.e. fold change, FDR) from 1st file
   - "_commonf2.txt" Common list of elements with all corresponding information from 2nd file
   - "_first_unique.txt" Unique list of elements with all corresponding information from 1st file
