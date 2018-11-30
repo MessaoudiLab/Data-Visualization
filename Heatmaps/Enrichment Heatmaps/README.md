@@ -15,14 +15,22 @@ View "FDR.txt" in Excel for an example
 ```
 nano heatmap_enrichment.R
 ```
-2. 
-- nano mastersheet and paste file 2
+2. Merge by correct header. In line 26, make sure "by.y" is correctly defined using the header label of the list of terms in "FDR.txt" file.
 
-## Use the script heatmap_enrichment.R
-- change the cbind to the titles of the distinguising columns
-- Ex: (MARV_unique, MARV_EBOV, EBOV_unique)
+3. Define conditions. In line 31, list header labels of the -log(FDR) columns to be visualized in the heatmap
+```
+###example
+heat <- cbind(Day0, Day4)
+heat <- cbind(nostim, stim)
+```
+4. Optional: can change color of heatmap in line 12
+```
+###example
+hmcol <- colorRampPalette(brewer.pal(9, "GnBu"))(100)
+hmcol <- colorRampPalette(brewer.pal(9, "RdBu"))(100)
+```
 
 ## Run the script under the directory containing "list_of_terms.txt" and "FDR.txt"
 ```
-Rscript heatmap_enrichment.R {file1} {file2} name_of_heatmap
+Rscript heatmap_enrichment.R list_of_terms.txt FDR.txt name_of_heatmap
 ```
