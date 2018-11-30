@@ -8,8 +8,6 @@
 library(VennDiagram)
 args <- commandArgs(TRUE)
 
-
-#Not efficient
 label1 <- args[1]
 file1  <- args[2]
 label2 <- args[3]
@@ -40,7 +38,7 @@ second_unique <- setdiff(n2, n1)
 print(second_unique)
 ############################################################
 ############################################################
-
+#Extract
 common1 <- f1[f1[,11]%in%n12,]
 write.table(common1, file=paste(outfile, "_commonf1.txt", sep=""), sep="\t", row.names=FALSE, col.names=TRUE, quote=FALSE)
 common2 <- f2[f2[,3]%in%n12,]
@@ -49,6 +47,7 @@ first_unique2 <- f1[f1[,11]%in%first_unique,]
 write.table(first_unique2, file=paste(outfile, "_first_unique.txt", sep=""), sep="\t", row.names=FALSE, col.names=TRUE, quote=FALSE)
 second_unique2 <- f2[f2[,3]%in%second_unique,]
 write.table(second_unique2, file=paste(outfile, "_second_unique.txt", sep=""), sep="\t", row.names=FALSE, col.names=TRUE, quote=FALSE)
+
 #Draw venn diagram
 category <- c(label1, label2)
 print(category)
