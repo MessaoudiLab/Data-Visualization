@@ -1,4 +1,4 @@
-# Program takes in 3 input files and creates venn diagrams based on the common elements in all pairwise files based on the first column
+# Program takes in 3 input files and creates venn diagrams based on the common elements in all pairwise files based on a specified column
 # Program also prints a text file with all the gene ids and gene names common among the group comparisons.
 
 # Function to find overlaps. The idea is to iterate over the pairs and create multiple objects, record their lengths and create venn. It also subsets gene information from the common list.
@@ -18,17 +18,17 @@ label3 <- args[5]
 file3 <- args[6]
 outfile <- args[7]
 #Open file handles and save the first columns
-f1 <- read.delim(file1, sep="\t", header=FALSE)
+f1 <- read.delim(file1, sep="\t", header=TRUE)
 #head(f1)
-f2 <- read.delim(file2, sep="\t", header=FALSE)
-f3 <- read.delim(file3, sep="\t", header=FALSE)
+f2 <- read.delim(file2, sep="\t", header=TRUE)
+f3 <- read.delim(file3, sep="\t", header=TRUE)
 
 ############################################################
 ############################################################
 # Individual sets
-n1 <- f1$V1
-n2 <- f2$V1
-n3 <- f3$V1
+n1 <- f1$GENE
+n2 <- f2$GENE
+n3 <- f3$GENE
 
 print(length(n1))
 print(length(n2))
