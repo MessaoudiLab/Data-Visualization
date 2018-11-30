@@ -1,5 +1,5 @@
 # Heatmaps
-## Prerequisites
+## Required files
 File1: List of genes to display on heatmap without a header
 
 See "list_of_genes.txt" in excel for an example
@@ -9,9 +9,15 @@ The file should be a tab delimited text file that contains the normalized count 
 
 View "rpkm.txt" in Excel for an example
 
-## Hardcoding the heatmap script
-Before running the heatmap script, edit the "heatmap.R" script.
+## Modifications to the heatmap script
+Before running the heatmap script, edit the "heatmap.R" script using nano
+```
+nano heatmap.R
+```
+
 The only parameters you need to change are: 1) the "merge_raw" object: by.y will correspond to what you've manually labeled the Gene ID column in the "rpkm.txt" file; 2) the "heat" object: change names corresponding the header labels for each sample
 
 ## Run heatmap.R
-Rscript heatmap.R File1 File2 nameofheatmap_prefix
+```
+Rscript heatmap.R {File1} {File2} nameofheatmap_prefix
+```
