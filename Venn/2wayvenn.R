@@ -1,5 +1,5 @@
-# Program takes in 2 input files and creates venn diagrams based on the common elements in all pairwise files based on the first column
-# Program also prints a text file with all the gene ids and gene names common among the group comparisons.
+# Program takes in 2 input files and creates venn diagrams based on the common elements in all pairwise files based on a specified column
+# Program also prints a text file with all the gene ids and gene names common and unique among the group comparisons.
 
 # Function to find overlaps. The idea is to iterate over the pairs and create multiple objects, record their lengths and create venn. It also subsets gene information from the common list.
 # An update to this would be to automate with functions that take in targets file with information about the files and labels that need to be compared.
