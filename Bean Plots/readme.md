@@ -23,6 +23,8 @@ library(beanplot)
 ```
 
 ### Data
+The data object should be a tab delimited text file in similar format to ITGB1.txt. The first column should be the group index which includes the group name as well as the number 1 or 2. The two items should be separated by a single space. The second column should be the quantitave value that will serve as the y dimension.
+
 
 ## References
 https://cran.r-project.org/web/packages/beanplot/vignettes/beanplot.pdf
