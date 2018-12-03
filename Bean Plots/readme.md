@@ -27,7 +27,8 @@ The data object should be a tab delimited text file in similar format to ITGB1.t
 
 ## Function Breakdown
 ```
-beanplot(rpkm ~ Group, data = ITGB1, main = "beanplot", side = "both", border = NA, col = list("#FFFF00", "#FFCC33", "#66CCCC", "#339999", "#66CCFF", "#006699"))
+beanplot(rpkm ~ Group, data = ITGB1, main = "beanplot", side = "both", border = NA, col = list("#FFFF00", 
++ "#FFCC33", "#66CCCC", "#339999", "#66CCFF", "#006699"))
 ```
 Arguments going from left to right:
 1. QuantitaveValue ~ Group: column names go here; notice that the values are not encased in quotation marks so do not use space, hyphen, slash, etc. in names
