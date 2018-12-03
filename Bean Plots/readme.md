@@ -27,4 +27,4 @@ library(beanplot)
 ## References
 https://cran.r-project.org/web/packages/beanplot/vignettes/beanplot.pdf
 
-written by: Brian Ligh
+Written by: Brian Ligh
