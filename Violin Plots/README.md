@@ -2,6 +2,8 @@
 ## Input data format
 Input dataframe should consist of 2 columns. The first column is the numeric/quantitative column that will be plotted on the y-axis (i.e. RPKM, fold change, etc). The second column should distinguish the first column into groups (i.e. infected versus uninfected, stim versus nostim). Data frame should have a header that labels first and second column. See "input_DF_example.txt"
 
+Can use "rpkm_to_vioplot_2.R" to quickly convert standard sequencing data set into desired format.
+
 ## Plot 
 Load ggplot2
 ```
