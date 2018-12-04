@@ -51,4 +51,4 @@ getAnywhere()
 ## References
 https://cran.r-project.org/web/packages/beanplot/vignettes/beanplot.pdf
 
-Written by: Brian Ligh
+Written by Brian Ligh
