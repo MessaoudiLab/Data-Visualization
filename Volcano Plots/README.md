@@ -2,23 +2,32 @@
 
 Will create volcano maps to visualize RNA-seq data
 
-### Arguments
+### Required file
 
+RNA-seq data frame containing list of genes, fold change, and p-value (or FDR p-value)
+See "input_data.xls" as example
+
+### Load libraries
 ```
-infile <- args[1]
+library(ggplot2)
+library(ggrepel)
 ```
-args[1] gives the argument for the txt input file of the genes list see **Getting Started**
 
+### Read in input file
 ```
-comparison <- args[2]
+genes <- read.delim("input_data.xls", sep="\t", header=TRUE)
+head(genes)
 ```
-args[2] gives the argument for the comparison between two variables in the dataset
 
-### Running code
+### Create column that distinguishes each gene as significant or not significant
+```
+genes$Significant <- ifelse(genes$p_val < 0.05, "pval < 0.05", "Not Sig")
+```
 
-Create a **txt** file and paste your genes in with specified rows and columns
+### Plot
+```
+pdf("Volcano.pdf")
+ggplot(genes, aes(x = avg_logFC, y = -log10(p_val))) + geom_point(aes(color = Significant), shape=17) + scale_color_manual(values = c("red", "black")) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_rect(colour = "black", size=2, fill=NA))
+dev.off
 
-### Sample Output
-
-### Testing the code
 
