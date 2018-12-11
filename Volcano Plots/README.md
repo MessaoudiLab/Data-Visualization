@@ -27,7 +27,7 @@ genes$Significant <- ifelse(genes$p_val < 0.05, "pval < 0.05", "Not Sig")
 ### Plot
 ```
 pdf("Volcano.pdf")
-ggplot(genes, aes(x = avg_logFC, y = -log10(p_val))) + geom_point(aes(color = Significant), shape=17) + scale_color_manual(values = c("red", "black")) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_rect(colour = "black", size=2, fill=NA))
+ggplot(genes, aes(x = avg_logFC, y = -log10(p_val))) + geom_point(aes(color = Significant), shape=17) + scale_color_manual(values = c("black", "red")) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_rect(colour = "black", size=4, fill=NA))
 dev.off
 
 
