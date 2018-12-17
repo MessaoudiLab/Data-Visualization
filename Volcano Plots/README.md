@@ -5,7 +5,7 @@ Will create volcano maps to visualize RNA-seq data
 ### Required file
 
 RNA-seq data frame containing list of genes, fold change, and p-value (or FDR p-value)
-See "input_data.xls" as example
+See "input_data.txt" as example
 
 ### Load libraries
 ```
@@ -15,7 +15,7 @@ library(ggrepel)
 
 ### Read in input file
 ```
-genes <- read.delim("input_data.xls", sep="\t", header=TRUE)
+genes <- read.delim("input_data.txt", sep="\t", header=TRUE)
 head(genes)
 ```
 
