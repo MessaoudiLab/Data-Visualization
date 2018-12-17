@@ -1,0 +1,34 @@
+# Project ID:RNAseq_Ilhem_Messaoudi_Macaca_Mulatta_MARV_rVSV_Septemeber2017	
+# The following line(s) allow to specify the contrasts needed for comparative analyses.
+# <CMP> CMPset1: DPI0-DPV0,DPI3-DPV0,DPI6-DPV0,DPI9-DPV0,DPI14-DPV0,DPI21-DPV0,DPI42-DPV0
+
+FileName	SampleName	Factor 	Date
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Pre_challenge_data/All_39_50_redo/data/Retrimm_trimmomatic/MARV_rVSV_47_DPV0_trimmed.fq.gz	DPV0_47	DPV0	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Pre_challenge_data/All_39_50_redo/data/Retrimm_trimmomatic/MARV_rVSV_48_DPV0_trimmed.fq.gz	DPV0_48	DPV0	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Pre_challenge_data/All_39_50_redo/data/Retrimm_trimmomatic/MARV_rVSV_49_DPV0_trimmed.fq.gz	DPV0_49	DPV0	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Pre_challenge_data/All_39_50_redo/data/Retrimm_trimmomatic/MARV_rVSV_50_DPV0_trimmed.fq.gz	DPV0_50	DPV0	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Pre_challenge_data/All_39_50_redo/data/Retrimm_trimmomatic/MARV_rVSV_47_DPV3_trimmed.fq.gz	DPV3_47	DPI0	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Pre_challenge_data/All_39_50_redo/data/Retrimm_trimmomatic/MARV_rVSV_48_DPV3_trimmed.fq.gz	DPV3_48	DPI0	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Pre_challenge_data/All_39_50_redo/data/Retrimm_trimmomatic/MARV_rVSV_49_DPV3_trimmed.fq.gz	DPV3_49	DPI0	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Pre_challenge_data/All_39_50_redo/data/Retrimm_trimmomatic/MARV_rVSV_50_DPV3_trimmed.fq.gz	DPV3_50	DPI0	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_47_DPI3_trimmed.fq.gz	DPI3_47	DPI3	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_48_DPI3_trimmed.fq.gz	DPI3_48	DPI3	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_49_DPI3_trimmed.fq.gz	DPI3_49	DPI3	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_50_DPI3_trimmed.fq.gz	DPI3_50	DPI3	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_47_DPI6_trimmed.fq.gz	DPI6_47	DPI6	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_48_DPI6_cat_trimmed.fq.gz	DPI6_48	DPI6	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_49_DPI6_trimmed.fq.gz	DPI6_49	DPI6	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_50_DPI6_trimmed.fq.gz	DPI6_50	DPI6	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_47_DPI9_trimmed.fq.gz	DPI9_47	DPI9	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_48_DPI9_trimmed.fq.gz	DPI9_48	DPI9	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_49_DPI9_trimmed.fq.gz	DPI9_49	DPI9	11-15-18
+/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_50_DPI9_trimmed.fq.gz	DPI9_50	DPI9	11-15-18
+#/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_48_DPI14_trimmed.fq.gz	DPI14_48	DPI14	11-15-18
+#/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_49_DPI14_trimmed.fq.gz	DPI14_49	DPI14	11-15-18
+#/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_50_DPI14_trimmed.fq.gz	DPI14_50	DPI14	11-15-18
+#/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_48_DPI21_trimmed.fq.gz	DPI21_48	DPI21	11-15-18
+#/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_49_DPI21_trimmed.fq.gz	DPI21_49	DPI21	11-15-18
+#/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_50_DPI21_trimmed.fq.gz	DPI21_50	DPI21	11-15-18
+#/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_48_DPI42_trimmed.fq.gz	DPI42_48	DPI42	11-15-18
+#/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_49_DPI42_trimmed.fq.gz	DPI42_49	DPI42	11-15-18
+#/bigdata/messaoudilab/arivera/Projects/Marburg/VSV-MARV/VSV-MARV_TTI/Postchallenge/Group_d3_47-50/data/Trimmed_sequences/MARV_rVSV_50_DPI42_trimmed.fq.gz	DPI42_50	DPI42	11-15-18
