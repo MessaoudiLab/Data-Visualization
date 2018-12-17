@@ -17,8 +17,8 @@ library(DESeq2)
 
 ## Read in files
 ```
-countDF <- read.table("MaSigPro_all_counts.txt", sep="\t", header=TRUE, row=1)
-targets <- read.delim("../targets.txt", comment.char="#")
+countDF <- read.table("countDF.txt", sep="\t", header=TRUE, row=1)
+targets <- read.delim("targets.txt", comment.char="#")
 ```
 
 Remove rows that sum up to zero from counts file
