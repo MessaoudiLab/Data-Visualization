@@ -66,12 +66,24 @@ pTF <- pTF + labs(size = “Gene Count”, fill = “p-value”)
 ```
 "labs" regards the label names and takes the same arguments as "aes" in the first module. Since, the x and y titles will not be included in this graph
 
-## Ordering by chosen variable
-Reordering of the y axis can only be done if the x axis has only 1 level.
+## Reordering Genes
+
+### Reorder by Variable
+**Requires only 1 level in X axis**
 ```
 ggplot(file,aes(y=reorder(Pathway_Name,rev(p_value))...
 ```
 By default, the x and y dimensions will be sorted alphabetically. To sort the "pathway names" by "p-value" for example, the reorder function is used to order the levels of "Pathway_Name" by the reverse sequence of "p_value." Reversing the "p_value" sequence makes the most statistically significant pathways appear at the top of the graph. 
+
+### Manual Reorder
+**Requires no duplicate row names**
+```
+require(dplyr)
+target = c("desired", "order", "of", "genes")
+file$Pathway_Name <- reorder.factor(file$Pathway_Name, new.order = target)
+file %>% arrange(Pathway_Name)
+```
+To manually reorder the gene appearance in the graph, load the package "dplyr" and create a target vector that describes the desired order of genes. Use the *dplyr* function "reorder.factor" and finalize the changes with the "arrange" function.
 
 ## Useful Functions
 To access help window
