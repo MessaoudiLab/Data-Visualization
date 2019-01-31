@@ -66,6 +66,19 @@ pTF <- pTF + labs(size = “Gene Count”, fill = “p-value”)
 ```
 "labs" regards the label names and takes the same arguments as "aes" in the first module. Since, the x and y titles will not be included in this graph
 
+### 6. scale_fill_gradient()
+```
++ scale_fill_gradient(low = "pink",high = "red")
+```
+Adding the function below to the end of the script will change the color of the gradient to the low and high color you specify.
+
+```
++ scale_fill_gradient(low = "pink",high = "red", limits=c(lower_limit, upper_limit))
+```
+Adding the limits argument to the scale_fill_gradient function allows you to change the gradient limits with a numerical vector. You could use this so that only bubbles with a significant p-value will fall within the gradient. Anything that does not fall in the gradient will be colored grey.
+
+To only adjust one end of the gradient, use NA to refer to the existing limit.
+
 ## Reordering Genes
 
 ### Reorder by Variable
@@ -77,6 +90,20 @@ By default, the x and y dimensions will be sorted alphabetically. To sort the "p
 
 ### Manual Reorder
 **Requires no duplicate row names**
+This is how to reorder the y-axis by providing your order of factors or Pathway_Name column as is in the above code. Run this after you read in your input file.
+
+```
+Up_Down$Pathway_Name2 <- factor(Up_Down$Pathway_Name, levels = c("IL-2", "IFNg", ...))
+```
+When you go to run the above script, change the y variable to the new column you just created.
+
+```
+ggplot(file, aes(y=Pathway_Name2, ...
+```
+
+**OR**
+
+
 ```
 require(dplyr)
 target = c("desired", "order", "of", "genes")
@@ -98,4 +125,4 @@ getAnywhere()
 * [tutorial for weighted scatter plots](http://t-redactyl.io/blog/2016/02/creating-plots-in-r-using-ggplot2-part-6-weighted-scatterplots.html)
 * [ordering y axis](https://stackoverflow.com/questions/18401931/ggplot2-ordering-y-axis)
 
-Written by Brian Ligh
+Written by Brian Ligh, Sloan Lewis
