@@ -89,7 +89,7 @@ ggplot(file,aes(y=reorder(Pathway_Name,rev(p_value))...
 By default, the x and y dimensions will be sorted alphabetically. To sort the "pathway names" by "p-value" for example, the reorder function is used to order the levels of "Pathway_Name" by the reverse sequence of "p_value." Reversing the "p_value" sequence makes the most statistically significant pathways appear at the top of the graph. 
 
 ### Manual Reorder
-**Requires no duplicate row names**
+
 This is how to reorder the y-axis by providing your order of factors or Pathway_Name column as is in the above code. Run this after you read in your input file.
 
 ```
