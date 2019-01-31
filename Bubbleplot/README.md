@@ -104,13 +104,13 @@ ggplot(file, aes(y=Pathway_Name2, ...
 **OR**
 
 
+Load the package "dplyr" and create a target vector that describes the desired order of genes. Use the *dplyr* function "reorder.factor" and finalize the changes with the "arrange" function.
 ```
 require(dplyr)
 target = c("desired", "order", "of", "genes")
 file$Pathway_Name <- reorder.factor(file$Pathway_Name, new.order = target)
 file %>% arrange(Pathway_Name)
 ```
-To manually reorder the gene appearance in the graph, load the package "dplyr" and create a target vector that describes the desired order of genes. Use the *dplyr* function "reorder.factor" and finalize the changes with the "arrange" function.
 
 ## Useful Functions
 To access help window
