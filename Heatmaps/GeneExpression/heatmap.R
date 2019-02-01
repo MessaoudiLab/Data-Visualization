@@ -26,16 +26,9 @@ f2 <- read.delim(file2, sep="\t", header=TRUE)
 merge_raw <- merge(x=f1, y=f2, by.x ="V1", by.y="hgnc_symbol", sort=F)
 print(merge_raw)
 merge <- merge_raw[rev(rownames(merge_raw)),]
-#merge_sort2 <- subset(merge_raw, abs(merge_raw$logFC) >= 2)
-#merge_sort <- merge_raw[order(merge_sort2$logFC),] 
 attach(merge)
-
-#merge_sort
-
 heat <- cbind(sampleA, sampleB, sampleC)
-
 rownames(heat) <- merge$V1
-#heat
 heat
 library(lattice)
 
