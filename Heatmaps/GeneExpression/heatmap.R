@@ -23,10 +23,13 @@ f1 <- read.delim(file1, sep="\t", header=FALSE)
 f2 <- read.delim(file2, sep="\t", header=TRUE)
 ############################################################
 #Section 1: Merge the annotations and the files wi
+##make sure to change "by.y="
 merge_raw <- merge(x=f1, y=f2, by.x ="V1", by.y="hgnc_symbol", sort=F)
 print(merge_raw)
 merge <- merge_raw[rev(rownames(merge_raw)),]
 attach(merge)
+
+##make sure to specify sample name
 heat <- cbind(sampleA, sampleB, sampleC)
 rownames(heat) <- merge$V1
 heat
