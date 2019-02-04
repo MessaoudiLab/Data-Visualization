@@ -48,7 +48,7 @@ To access underlying code of a function
 getAnywhere()
 ```
 
-##Re-ordering y-axis with multiple variables
+### Re-ordering y-axis with multiple variables
 This is how to reorder the y-axis by providing your order of factors or Pathway_Name column as is in the above code. Run this after you read in your input file.
 
 ```
@@ -60,14 +60,14 @@ When you go to run the above script, change the y variable to the new column you
 ggplot(file, aes(y=Pathway_Name2, ...
 ```
 
-##Changing the color of the gradient
+### Changing the color of the gradient
 Adding the function below to the end of the script will change the color of the gradient to the low and high color you specify. 
 
 ```
 + scale_fill_gradient(low = "pink",high = "red")
 ```
 
-##Changing the limits of the gradient
+### Changing the limits of the gradient
 Adding the limits argument to the scale_fill_gradient function allows you to change the gradient limits with a numerical vector. You could use this so that only bubbles with a significant p-value will fall within the gradient. Anything that does not fall in the gradient will be colored grey. 
 
 ```
