@@ -15,7 +15,23 @@ Before running the heatmap script, edit the "heatmap.R" script using nano
 nano heatmap.R
 ```
 
-The only parameters you need to change are: 1) the "merge_raw" object: by.y will correspond to what you've manually labeled the Gene ID column in the "rpkm.txt" file; 2) the "heat" object: change names corresponding the header labels for each sample
+The only parameters you need to change are: 
+
+1) the "merge_raw" object: by.y will be the same as the header label of the  gene symbol column in the "rpkm.txt" file 
+```
+##example
+##by.y = "GENE" same as header label in "rpkm.txt"
+merge_raw <- merge(x=f1, y=f2, by.x ="V1", by.y="GENE", sort=F)
+```
+
+2) the "heat" object: change names corresponding the header labels for each sample
+```
+##example
+##sample labels are from "rpkm.txt"
+heat <- cbind(S1_1h, S4_1h, S2_72h, S3_72h)
+```
+
+See "heatmap.R" as an example based on "rpkm.txt"
 
 ## Run heatmap.R
 ```
