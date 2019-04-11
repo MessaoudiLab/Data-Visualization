@@ -1,1 +1,28 @@
+https://www.mirnet.ca/
 
+Select miRNA list
+
+Organism- human
+
+ID- miRBase ID
+
+Tissue- optional, do not have to select
+
+Target type- genes
+
+Input your miRNA IDs, format: hsa-mir-122
+*Be careful with how many you put in as it will take longer and be harder to see if you have too many miRNAs and targets
+
+Submit and proceed
+
+Generates a list of validated target genes you can download. Then proceed.
+
+This is where you can set Network parameters or leave in defaults and proceed again.
+
+This is your network image with all targets of your miRNA input.
+
+You can subset this with a DEG list by clicking batch highlight in the bottom right corner.
+Input your genes and it will highlight them on the map. 
+To only see the highlighted ones, click on Extract current highlighted modules at the bottom of the map menu in the top right corner. 
+
+They also have a pathway enrichment analysis tool at the top right.
