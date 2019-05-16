@@ -14,6 +14,7 @@ Rstudio is an integrated development environment for R that includes a console w
 pdf("pdfname")
 ggplot function
 dev.off()
+```
 
 ### ggplot2 package
 ggplot2 can be obtained by the following command
