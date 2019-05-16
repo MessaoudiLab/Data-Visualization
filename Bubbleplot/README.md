@@ -9,6 +9,11 @@ Rstudio is an integrated development environment for R that includes a console w
  https://cran.cnr.berkeley.edu/
  https://www.rstudio.com/products/rstudio/download/#download
 ``` 
+**NOTE**: If you are not using Rstudio, you will need to save the graph into a pdf in order to view the graph in progress
+```
+pdf("pdfname")
+ggplot function
+dev.off()
 
 ### ggplot2 package
 ggplot2 can be obtained by the following command
@@ -78,6 +83,12 @@ Adding the function below to the end of the script will change the color of the 
 Adding the limits argument to the scale_fill_gradient function allows you to change the gradient limits with a numerical vector. You could use this so that only bubbles with a significant p-value will fall within the gradient. Anything that does not fall in the gradient will be colored grey.
 
 To only adjust one end of the gradient, use NA to refer to the existing limit.
+
+### 7. Change size of bubbles: scale_size() 
+```
++ scale_size(range = c(1,10))
+```
+"scale_size" changes the size of the bubbles by a few ways including mapping the sizes to a specified range or by placing limits on the smallest or largest size.
 
 ## Reordering Genes
 
