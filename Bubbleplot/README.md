@@ -12,7 +12,7 @@ Rstudio is an integrated development environment for R that includes a console w
 **NOTE**: If you are not using Rstudio, you will need to save the graph into a pdf in order to view the graph in progress
 ```
 pdf("pdfname.pdf")
-ggplot variable such as "pTF"
+pTF
 dev.off()
 ```
 
