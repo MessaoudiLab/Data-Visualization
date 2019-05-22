@@ -70,7 +70,7 @@ pTF <- pTF + facet_grid(. ~ Orientation)
 ```
 pTF <- pTF + labs(size = “Gene Count”, fill = “p-value”)
 ```
-"labs" regards the label names and takes the same arguments as "aes" in the first module. Since, the x and y titles will not be included in this graph
+"labs" edits the label names as they appear in the graph. The same can be done to x and y if included.
 
 ### 6. scale_fill_gradient()
 ```
