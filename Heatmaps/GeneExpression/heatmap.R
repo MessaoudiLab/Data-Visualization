@@ -42,3 +42,8 @@ y
 pdf(paste(outprefix, "_heatmap.pdf", sep=""))
 levelplot(t(y), height=0.3, col.regions=rev(hmcol), main="", colorkey=list(space="top"), xlab="", ylab="", pretty=TRUE, width=0.5, cexRow=0.1, cexCol=0.1, aspect=2.5)
 dev.off()
+
+pdf(paste(outprefix, "_heatmap_clustered.pdf", sep=""))
+heatmap.2(y, col=rev(hmcol), scale="row", key=T, keysize=1.5, density.info="density", cexRow=0.5, cexCol=0.9, Colv=FALSE, distfun=function(x) as.dist(1-cor(t(x))), hclustfun=function(x) hclust(x, method="average"), trace='none')
+dev.off()
+
